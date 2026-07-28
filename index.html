@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laeta Agro — Consultoria em Fertilizantes</title>
+<meta name="description" content="Consultoria personalizada, relatórios de mercado e a melhor relação de troca entre a sua produção e os seus insumos.">
+<meta property="og:title" content="Laeta Agro — Estratégia sólida. Campo próspero.">
+<meta property="og:description" content="Consultoria em fertilizantes, relação de troca soja × insumo e relatórios semanais de mercado.">
+<meta property="og:image" content="assets/imagery/soja-field-sunset.jpg">
+<link rel="icon" href="assets/logos/laeta-agro-logo-on-light.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--verde:#073B2B;--verde-med:#064A2A;--verde-claro:#1F5C3F;--marfim:#F5EBD8;--sage:#B4C9BF;--areia:#F3F6F4;--ouro:#D5A030;--ouro-claro:#E0B864;--ouro-escuro:#A67D25;--terra:#7A5A3A;--tinta:#14231D;--vermelho:#8C3B2E;--display:'Jost',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--body);color:var(--tinta);background:#fff;-webkit-font-smoothing:antialiased}
+a{color:var(--verde-med)}a:hover{color:var(--ouro-escuro)}
+.eyebrow{font-weight:700;font-size:12px;letter-spacing:.26em;color:var(--terra)}
+h1,h2,h3{font-family:var(--display);letter-spacing:.02em;margin:0}
+.wrap{padding:80px 56px}
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 56px;background:var(--verde);position:sticky;top:0;z-index:10}
+header img{height:72px;margin-left:-10px}
+nav{display:flex;gap:36px;align-items:center;font-size:14px;font-weight:500}
+nav a{color:var(--marfim);text-decoration:none}nav a:hover{color:var(--ouro-claro)}
+.btn{background:var(--ouro);color:var(--verde);padding:11px 22px;border-radius:8px;font-weight:600;text-decoration:none}
+.btn:hover{background:var(--ouro-claro);color:var(--verde)}
+.btn-lg{padding:14px 28px;font-size:15px}
+.btn-ghost{border:1px solid var(--marfim);color:var(--marfim);padding:14px 28px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none}
+.btn-ghost:hover{background:rgba(245,235,216,.12);color:var(--marfim)}
+.hero{position:relative;min-height:560px;display:flex;align-items:center;padding:0 56px;overflow:hidden;background:var(--verde)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,59,43,.92) 0%,rgba(7,59,43,.62) 55%,rgba(7,59,43,.28) 100%)}
+.hero .inner{position:relative;max-width:640px;padding:80px 0}
+.hero h1{font-weight:300;font-size:54px;line-height:1.1;color:var(--marfim);margin:18px 0}
+.hero p{font-size:17px;line-height:1.6;color:var(--sage);max-width:500px;margin:0 0 32px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+h2.sec{font-weight:300;font-size:36px;color:var(--verde-med);margin:12px 0 8px}
+.lede{font-size:16px;line-height:1.6;max-width:620px;margin:0 0 36px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--sage);border-radius:12px;padding:28px;box-shadow:0 1px 2px rgba(7,59,43,.06),0 4px 16px rgba(7,59,43,.08)}
+.card .k{font-weight:600;font-size:13px;color:var(--terra)}
+.card .v{font-family:var(--display);font-weight:300;font-size:42px;font-variant-numeric:tabular-nums;color:var(--verde-med);margin:8px 0 4px}
+.card .v span{font-size:18px;color:var(--terra)}
+.up{font-weight:600;font-size:13px;color:var(--vermelho)}.down{font-weight:600;font-size:13px;color:var(--verde-claro)}
+.svc{background:#fff;border:1px solid var(--sage);border-radius:12px;padding:26px}
+.svc h3{font-weight:500;font-size:19px;color:var(--verde-med);margin:0 0 8px}
+.svc p{font-size:14px;line-height:1.6;margin:0}
+.split{display:grid;grid-template-columns:1fr 1fr;background:var(--verde)}
+.split .copy{padding:80px 56px;display:flex;flex-direction:column;justify-content:center}
+.split h2{font-weight:300;font-size:34px;line-height:1.2;color:var(--marfim);margin:14px 0}
+.split p{font-size:16px;line-height:1.7;color:var(--sage);margin:0}
+.split img{width:100%;height:100%;object-fit:cover;min-height:380px}
+#contato{background:var(--areia);display:flex;justify-content:space-between;align-items:center;gap:48px;flex-wrap:wrap}
+#contato h2{font-weight:300;font-size:34px;color:var(--verde-med);margin:0 0 12px}
+form{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap}
+label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600}
+input{font-family:var(--body);font-size:15px;padding:12px 14px;border-radius:4px;border:1px solid var(--sage);min-width:260px}
+input:focus{outline:2px solid var(--ouro);outline-offset:1px}
+button{background:var(--ouro-escuro);color:#fff;border:none;padding:13px 26px;border-radius:8px;font-family:var(--body);font-weight:600;font-size:15px;cursor:pointer}
+button:hover{background:var(--ouro);color:var(--verde)}
+footer{background:var(--verde);padding:44px 56px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer img{height:46px}
+footer span{font-size:13px;color:var(--sage)}
+.fine{font-size:13px;color:var(--terra);margin:16px 0 0}
+@media(max-width:1000px){.grid4{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}}
+@media(max-width:760px){.wrap{padding:56px 24px}header{padding:12px 20px}header img{height:52px}nav{gap:18px;font-size:13px}nav a.hide-sm{display:none}.hero{padding:0 24px}.hero h1{font-size:36px}h2.sec,.split h2,#contato h2{font-size:28px}.grid3,.grid4{grid-template-columns:1fr}.split .copy{padding:56px 24px}footer{padding:32px 24px}}
+</style>
+</head>
+<body>
+<header>
+<a href="#top"><img src="assets/logos/laeta-agro-logo-on-dark.png" alt="Laeta Agro"></a>
+<nav>
+<a href="#troca" class="hide-sm">Relação de troca</a>
+<a href="#servicos" class="hide-sm">Serviços</a>
+<a href="#contato" class="hide-sm">Contato</a>
+<a href="#contato" class="btn">Falar com consultor</a>
+</nav>
+</header>
+<section class="hero" id="top">
+<img src="assets/imagery/soja-field-sunset.jpg" alt="">
+<div class="veil"></div>
+<div class="inner">
+<div class="eyebrow" style="color:var(--ouro)">CONSULTORIA EM FERTILIZANTES</div>
+<h1>Estratégia sólida. Campo próspero.</h1>
+<p>Consultoria personalizada, relatórios de mercado e a melhor relação de troca entre a sua produção e os seus insumos — decisão com dado, não achismo.</p>
+<div class="actions">
+<a href="#contato" class="btn btn-lg">Solicitar consultoria</a>
+<a href="#troca" class="btn-ghost">Ver relação de troca</a>
+</div>
+</div>
+</section>
+<section id="troca" class="wrap" style="background:var(--areia)">
+<div class="eyebrow">RELAÇÃO DE TROCA · SEMANA 29</div>
+<h2 class="sec">Quantas sacas de soja compram o seu insumo?</h2>
+<p class="lede">Acompanhamos semanalmente a relação de troca entre soja e os principais fertilizantes — o indicador que define o momento certo de fechar negócio.</p>
+<div class="grid3">
+<div class="card"><div class="k">Soja → Ureia</div><div class="v">18,5 <span>sc/t</span></div><div class="up">▲ 3,2% na semana</div></div>
+<div class="card"><div class="k">Soja → KCl</div><div class="v">13,8 <span>sc/t</span></div><div class="down">▼ 1,1% na semana</div></div>
+<div class="card"><div class="k">Soja → MAP</div><div class="v">26,7 <span>sc/t</span></div><div class="up">▲ 0,8% na semana</div></div>
+</div>
+<p class="fine">Fonte: levantamento próprio, preços CFR Brasil. Valores ilustrativos — receba a série completa no relatório semanal.</p>
+</section>
+<section id="servicos" class="wrap">
+<div class="eyebrow">O QUE FAZEMOS</div>
+<h2 class="sec" style="margin-bottom:36px">Quatro frentes, um objetivo: valor na sua troca</h2>
+<div class="grid4">
+<div class="svc"><h3>Consultoria personalizada</h3><p>Estratégia de compra de insumos sob medida para a sua operação e o seu fluxo de caixa.</p></div>
+<div class="svc"><h3>Relação de troca</h3><p>Monitoramento contínuo soja × fertilizante para travar a troca no melhor momento.</p></div>
+<div class="svc"><h3>Relatórios de mercado</h3><p>Preços CFR Brasil semanais e análise de geopolítica de insumos, direto no seu e-mail.</p></div>
+<div class="svc"><h3>Intermediação de venda</h3><p>Conexão direta entre produtores e fornecedores, sem intermediários redundantes.</p></div>
+</div>
+</section>
+<section class="split">
+<div class="copy">
+<div class="eyebrow" style="color:var(--ouro)">POR QUE A LAETA</div>
+<h2>Crescimento com valor, medido em cada tonelada.</h2>
+<p>Cada recomendação nasce de dado real de mercado — nunca de tabela genérica. É essa precisão que transforma a compra de insumo em vantagem competitiva.</p>
+</div>
+<img src="assets/imagery/seedling-fertilizer-closeup.jpg" alt="">
+</section>
+<section id="contato" class="wrap">
+<div style="max-width:460px">
+<h2>Uma consultoria personalizada para o seu negócio.</h2>
+<p style="font-size:15px;line-height:1.6;margin:0">Fale com um consultor e receba uma análise inicial da sua relação de troca, sem custo.</p>
+</div>
+<form id="lead" action="https://formsubmit.co/contato@laetaagro.com.br" method="POST">
+<label>E-mail
+<input type="email" name="email" required placeholder="voce@fazenda.com.br">
+</label>
+<button type="submit">Solicitar análise</button>
+</form>
+</section>
+<footer>
+<img src="assets/logos/laeta-agro-logo-on-dark.png" alt="Laeta Agro">
+<span>© 2026 Laeta Agro · Soja · Milho · Fertilizantes · Estratégia</span>
+</footer>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#073B2B"/><text x="50" y="62" font-family="Jost,sans-serif" font-size="34" font-weight="300" fill="#F5EBD8" text-anchor="middle">LA</text></svg></template>
+</body>
+</html>
